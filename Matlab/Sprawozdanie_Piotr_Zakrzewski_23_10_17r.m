@@ -1,7 +1,7 @@
 %% Zakrzewski Piotr 42033 AR17L Pon_10-12 zp42033@zut.edu.pl 
 % LAB_4: *Grafika 2D* 23.10.2017
 %
-% *Celem* æwiczenia jest nabycie umiejêtnoœci tworzenia wykresów funkcji 2D, zapoznanie siê z funkcjami i mo¿liwoœciami graficznymi dostêpnymi w programie Matlab oraz opanowanie umiejêtnoœci generowania i prezentacji sygna³ów
+% *Celem* cwiczenia jest nabycie umiejetnosci tworzenia wykresow funkcji 2D, zapoznanie sie z funkcjami i mozliwosciami graficznymi dostepnymi w programie Matlab oraz opanowanie umiejetnosci generowania i prezentacji sygnalow
 %
 % 42033 - nr albumu, AR17L - kierunek AR, rok 1, grupa 7, forma zajec L, termin zajec poniedzialek 10-12 
 % 
@@ -12,7 +12,7 @@
 % Narysuj funkcje x, x^3, e^x i e^x2 w przedziale 0 < x < 4 na wykresie...
 
 % Podpunkt 1a
-% ...prostok¹tnym
+% ...prostokatnym
 
 x = linspace(0,4,1000);
 
@@ -29,14 +29,14 @@ plot(x,y2,'k');
 plot(x,y3,'g');
 plot(x,y4,'b');
 
-title('Wykres prostok¹tny');
+title('Wykres prostokatny');
 axis([0 4 0 10]);
-xlabel('Oœ x');
-ylabel('Oœ y');
+xlabel('Os x');
+ylabel('Os y');
 legend('x','x^3','e^x','e^{x2}');
 
 % Podpunkt 1b
-% ...pó³logarytmicznym (logarytm na osi y)
+% ...pollogarytmicznym (logarytm na osi y)
 
 figure;
 
@@ -46,9 +46,9 @@ semilogy(x,y2,'k');
 semilogy(x,y3, 'g');
 semilogy(x,y4, 'b');
 
-title('Wykres pó³logarytmiczny y');
-xlabel('Oœ x');
-ylabel('Oœ y');
+title('Wykres pollogarytmiczny y');
+xlabel('Os x');
+ylabel('Os y');
 legend('x','x^3','e^x','e^{x2}');
 
 % Podpunkt 1c
@@ -63,15 +63,15 @@ loglog(x,y3,'g');
 loglog(x,y4,'b');
 
 title('Wykres logarytmiczny');
-xlabel('Oœ x');
-ylabel('Oœ y');
+xlabel('Os x');
+ylabel('Os y');
 legend('x','x^3','e^x','e^{x2}');
 
 %% Zadanie 2: funkcje
-% 2. Wykreœl na jednym wykresie funkcjê:
+% 2. Wykresl na jednym wykresie funkcje:
 
 % Podpunkt 2a
-% a) y=sin(x) - linia ci¹g³a
+% a) y=sin(x) - linia ciagla
 
 a = linspace(0,5,20);
 b = sin(a);
@@ -91,7 +91,7 @@ plot(c,d,'--');
 axis([0 5 -2 10]);
 
 % Podpunkt 2c
-% y=x-x^3/6+x^5/120 - kó³ka
+% y=x-x^3/6+x^5/120 - kolka
 
 e = linspace(0,5,20);
 f = e - e.^3./6 + e.^5./120;
@@ -99,15 +99,15 @@ plot(e,f,'-o');
 
 title('Wykresy funkcji');
 axis([0 5 -2 10]);
-xlabel('Oœ X');
-ylabel('Oœ Y');
+xlabel('Os X');
+ylabel('Os Y');
 legend('y = sin(x)','y = x','y = x - x^3/6 + x^5/120');
 
 %% Zadanie 3: wykresy
-% Wykonaj dla danych podanych przez prowadz¹cego wykresy:
+% Wykonaj dla danych podanych przez prowadzacego wykresy:
 
 % Podpunkt 3a
-% ko³a (pe³ne w œrodku) - komenda area – wykres powierzchniowy
+% kola (pelne w srodku) - wykres powierzchniowy
 
 figure;
 
@@ -123,7 +123,6 @@ plot(x, y);
 axis square;
 xlim([0 20]);
 ylim([0 20]);
-area(x,y);
 
 % Podpunkt 3b
 % chmury losowej – scatter
@@ -135,7 +134,7 @@ scatter(k,l);
 axis ([0 150 0 150]);
 
 % Podpunkt 3c
-% wykres ko³owy 2D i 3D, procentowy i wartoœciach dowolnych + opisy osi
+% wykres kolowy 2D i 3D, procentowy i wartosciach dowolnych + opisy osi
 
 figure;
 m = [3 0.5 2 7 6];
@@ -145,7 +144,7 @@ figure;
 pie3(m);
 
 % Podpunkt 3d
-% wykres s³upkowy
+% wykres slupkowy
 
 figure;
 n = [2 3 5 9 18 1 5 4 4 3 8 15 10];

@@ -4,3 +4,6 @@
 *.o
 *.exe
 *.depend
+*.png
+*.pdf
+*.html
