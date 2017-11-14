@@ -1,33 +1,33 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+#include <math.h.>
 
-#define  EPS 1e-12
+#define EPS 1e-12
 
 int main() {
-    double w, s, x, n, m;
-    printf("Wpisz x (|x| < 1) = ");
+    double x, s, w, n, m;
+    printf("Wpisz x (0<x<2) = ");
     scanf("%lf",&x);
+    s = (x-1) / 1;
     w = x;
-    s = 0;
-    n = 3;
+    n = 2;
     m = -1;
 
-    if (x <= 1) {
+    if (x > 0 && x < 2) {
         while (fabs(w) > EPS) {
+            w = m * (pow(x-1,n)) / n;
             s += w;
-            w = m * (pow(x,n)) / (n);
+            n++;
             m *= -1;
-            n += 2;
         }
     }
     else {
-        printf("\n\nFunckja niezdefiniowana\n\n");
+        printf("Funkcja niezdefiniowana");
         return 0;
     }
 
     printf("\n\nx = %f",x);
     printf("\nSuma szeregu = %f",s);
-    printf("\narc tg x = %f",atan(x));
+    printf("\nln x = %f",log(x));
     return 0;
 }
