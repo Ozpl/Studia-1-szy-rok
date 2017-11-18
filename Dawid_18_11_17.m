@@ -33,7 +33,9 @@ while wartosc>przyblizenie
     wykresProsta = [wykresProsta;wartosc];
 end
 
-x=rand(5,1)
+fprintf('Wynikiem jest (iteracja prostych) : \n%f\n%f\n%f\n%f\n%f w %d iteracjach',x,liczba_iter_Prosta);
+
+x=rand(5,1);
 n=size(x,1);
 wartosc = inf;
 przyblizenie = 1e-3;
@@ -63,7 +65,6 @@ while wartosc>przyblizenie
     wykresGauss = [wykresGauss;wartosc];
 end
 
-fprintf('Wynikiem jest (prosta) : \n%f\n%f\n%f\n%f\n%f w %d iteracjach',x,liczba_iter_Prosta);
 fprintf('\nWynikiem jest (Gauss) : \n%f\n%f\n%f\n%f\n%f w %d iteracjach',x,liczba_iter_Gauss);
 
 figure
