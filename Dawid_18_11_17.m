@@ -11,26 +11,25 @@ liczba_iter_Prosta = 0;
 
 wykresProsta = [];
 while wartosc>przyblizenie
-    pamiec = x;
+    pamiec=x;
     
-    for i = 1:n
+    for i=1:n
+        suma=0;
         
-        suma = 0;
-        
-        for j = 1:i-1
-                suma = suma + A(i,j) * x(j);
+        for j=1:n
+            
+            if j~=i
+                suma=suma+A(i,j)*x(j);
+            end
+            
         end
         
-        for j = i + 1:n
-                suma = suma + A(i,j) * pamiec(j);
-        end
-        
-        x(i) = (1 / A(i,i)) * (b(i) - suma);
+        x(i)=(1/A(i,i))*(b(i)-suma);
     end
     
-    liczba_iter_Prosta = liczba_iter_Prosta+1;
-    wartosc = norm(pamiec-x);
-    wykresProsta = [wykresProsta;wartosc];
+    liczba_iter_Prosta=liczba_iter_Prosta+1;
+    wartosc=norm(pamiec-x);
+    wykresProsta=[wykresProsta;wartosc];
 end
 
 fprintf('Wynikiem jest (iteracja prostych) : \n%f\n%f\n%f\n%f\n%f w %d iteracjach',x,liczba_iter_Prosta);
