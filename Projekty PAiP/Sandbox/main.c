@@ -5,27 +5,20 @@
 #define EPS 1e-12
 
 int main() {
-    double a, x, w, s, n, silnia;
-    printf("Podaj a = ");
-    scanf("%lf",&a);
-    printf("Podaj x = ");
-    scanf("%lf",&x);
-    w = x;
-    s = 1;
-    n = 1;
-    silnia = 1;
+    float x[7];
+    int n = 7, i = 0;
 
-while (fabs(w) > EPS)
-    {
-        silnia *= n;
-        w = pow(x * log(a),n) / silnia;
-        s += w;
-        n++;
+    for (i = 0; i < n; i++) {
+        printf("\nWprowadz x[%.0f] wyraz = ",i);
+        scanf("%lf",&x[i]);
     }
 
-    printf("\n\na = %f",a);
-    printf("\nx = %f",x);
-    printf("\nSuma szeregu = %.12f",s);
-    printf("\nFunkcja a^x = %.12f\n",pow(a,x));
+    for (i = 0; i < n; i++) {
+        if (x[i] > x[n]) {
+            x[i] = x[n];
+        }
+    }
+    printf("\n\nNajwiekszy x = %lf\n",x[n]);
     return 0;
+
 }
