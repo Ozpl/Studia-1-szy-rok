@@ -88,7 +88,6 @@ axes(handles.axes1)
 plot(x,y);
 set(handles.text4,'String',["Wykres stworzony dla =" "" "a = " num2str(a) "" "p = " num2str(p) "" "L = " num2str(L)]);
 
-
 % --- Executes on slider movement.
 function slider1_Callback(hObject, eventdata, handles)
 slider1 = get(hObject,'Value');

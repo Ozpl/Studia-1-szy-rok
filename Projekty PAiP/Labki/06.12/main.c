@@ -14,7 +14,7 @@ int main() {
         for (j = 0; j < n; j++) {
             //printf("\nPodaj element x[%i][%i] = ",i,j);
             //scanf("%i",&x[i][j]);
-            x[i][j]=rand()%(b-a+1)-50;
+            x[i][j]=rand()%(b-a+1)-30;
         }
     }
 

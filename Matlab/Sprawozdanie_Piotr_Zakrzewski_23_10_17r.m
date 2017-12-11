@@ -43,8 +43,8 @@ figure;
 semilogy(x,y1,'r');
 hold on;
 semilogy(x,y2,'k');
-semilogy(x,y3, 'g');
-semilogy(x,y4, 'b');
+semilogy(x,y3,'g');
+semilogy(x,y4,'b');
 
 title('Wykres pollogarytmiczny y');
 xlabel('Os x');
