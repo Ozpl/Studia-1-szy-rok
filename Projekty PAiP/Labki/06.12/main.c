@@ -8,7 +8,7 @@ int main() {
     scanf("%i",&n);
     srand(time(NULL));
 
-    printf("\n Losowanie liczby z przedzia³u <a,b>=<%i,%i>", a-30, b-30);
+    printf("\nLosowanie liczby z przedzia³u <a,b> = <%i,%i>", a-30, b-30);
 
     for (i = 0; i < n; i++) {
         for (j = 0; j < n; j++) {

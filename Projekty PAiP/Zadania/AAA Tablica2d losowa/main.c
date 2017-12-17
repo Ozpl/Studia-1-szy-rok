@@ -8,6 +8,8 @@ int main() {
     scanf("%i",&m);
     printf("Podaj rozmiar n macierzy kwadratowej = ");
     scanf("%i",&n);
+
+
     srand(time(NULL));
 
     printf("\nLosowanie liczby z przedzialu <a,b> = <%i,%i>", a-30, b-30);

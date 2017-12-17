@@ -24,6 +24,9 @@ int WynikMojegoMnozenia(int karpik,int karpik1)
 int main() {
     int a,b,suma=0,wynik=0,wynikMnozenia=0;
 
+    int a = 0;
+    int b = 0;
+
     printf("\n Podaj liczbe a:");
     scanf("%i",&a);
     printf("\nPodaj liczbe b:");

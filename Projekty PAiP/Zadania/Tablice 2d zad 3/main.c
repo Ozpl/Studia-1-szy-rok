@@ -3,7 +3,7 @@
 
 int main() {
     int x[10][10], y[10], z[10];
-    int i = 0, j = 0, m = 0, n = 0, nieuje = 0, najkol = 0, inajkol = 0;
+    int i = 0, j = 0, k = 0, m = 0, n = 0, nieuje = 0, najkol = 0, inajkol = 0, temp = 0;
 
     printf("Podaj rozmiar m tablicy = ");
     scanf("%i",&m);
@@ -65,6 +65,26 @@ int main() {
         else
             printf("     ");
     }
+/*
+    for (j = 0; j < n; j++) {
+        for (k = 0; k < m; k++) {
+            for (i = 0; i < m; i++) {
+                if (x[i][j] < x[i+1][j]) {
+                    temp = x[i][j];
+                    x[i][j] = x[i+1][j];
+                    x[i+1][j] = temp;
+                }
+            }
+        }
+    }
 
+    printf("\n\nPosortowana kolumnowo tablica = \n");
+    for (i = 0; i < m; i++) {
+        for (j = 0; j < n; j++) {
+            printf("%5i",x[i][j]);
+        }
+        printf("\n");
+    }
+**/
     return 0;
 }
