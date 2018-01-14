@@ -1,42 +1,47 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int DodajDwaElementy(int jeden, int dwa) {
-    int sumadodowania;
-    sumadodowania=jeden+dwa;
-    return sumadodowania;
-}
-
-int DwaElementyPrzezDwa(int pierwszy, int drugi)
+int main()
 {
-    int MojWynik;
-    MojWynik=(pierwszy+drugi)/2;
-    return MojWynik;
-}
+    int a[10][20];
+    int i,j,n,m;
 
-int WynikMojegoMnozenia(int karpik,int karpik1)
-{
-    int WynikMnozenia;
-    WynikMnozenia=karpik*karpik1;
-    return WynikMnozenia;
-}
+    printf("\nIlosc wierszy:");
+    scanf("%d",&n);
+    printf("\nIlosc kolumn:");
+    scanf("%d",&m);
+    printf("\nPodaj %d liczb:\n",n*m);
 
-int main() {
-    int a,b,suma=0,wynik=0,wynikMnozenia=0;
+    for(i=0; i<n; i++) {
+        for(j=0; j<m; j++) {
+            printf("a[%i][%i]=",i,j);
+            scanf("%d",&a[i][j]);
+        }
+    }
 
-    printf("\n Podaj liczbe a:");
-    scanf("%i",&a);
-    printf("\nPodaj liczbe b:");
-    scanf("%i",&b);
+    puts("\nWczytana tablica:");
+    for(i=0; i<n; i++) {
+        for(j=0; j<m; j++) {
+            printf("\t%d",a[i][j]);
+        }
+        puts("\n");
+    }
 
-    wynik=DwaElementyPrzezDwa(a,b);
-    printf("Moj wynik dzielenia: %i",wynik);
+    int il=0,ilo=0;
+    for(j=0; j<m; j++) {
+        for(i=0; i<n; i++) {
+            if(a[i][j]%5==0) {
+                il++;
+            }
+        }
 
-    suma=DodajDwaElementy(a,b);
-    printf("Suma = %i",suma);
+        if(il==n) {
+            ilo++;
+        }
 
-    wynikMnozenia=WynikMojegoMnozenia(a,b);
-    printf("\nWynik mojego mnozenia wynosi %i:",wynikMnozenia);
+        il = 0;
+    }
 
+    printf("\nIlosc kolumn =%d",ilo);
     return 0;
 }
