@@ -1,35 +1,46 @@
-%% Zakrzewski Piotr 42033 AR17L Pi¹_10-12 zp42033@zut.edu.pl 
+%% Nazwisko Imiê 55555 AR21L Œro_12-14 user@gmail.com 
 % LAB_1: *Wprowadzenie do programu Matlab* 07.10.2017
 %
 % *Celem* niniejszego æwiczenia jest wykonanie kilkunastu prostych zadañ na
-% macierzach i wektorach.
+% macierzach i wektorach... (opis celu æwiczenia lub projektu).
 %
-% 42033 - nr albumu, AR17L - kierunek AR, rok 1, grupa 7, forma zajêæ L, termin zajêæ pi¹tek 10-12 
+% 55555 - nr albumu, AR21L - kierunek AR, rok 2, grupa 1, forma zajêæ L, termin zajêæ œroda 12-14 
 % 
-% LAB_1, Zadania na wektorach i macierzach, 13.10.17r.
+% w drugiej linii nr æwiczenia LAB_1 (PROJ_4), nazwa, data wykonania (LAB)
+% lub wydania zadania (PROJ)
+% publish('NAZWAPLIKU'), wydrukuj na drukarce lub do pliku np. do PrimoPDF
+% b¹dŸ zapisz. Pliki html mo¿na edytowaæ równie¿ programem MS Word.
 
 
 %% Zadanie 1: wektory
 % 
-% Zdefiniuj wektor x postaci:
+% Zdefiniuj wektor a postaci:
 %
-% $$a = [0,4,8...16,20]$$
+% $$a = [1,2,4,...,64]$$
 
-x=0:4:20;
+a=2.^(0:6)
 
-%% Zadanie 2: wektory
-% Zdefiniuj wektor y postaci:
+%% Zadanie 2: macierze
+% Zdefiniuj macierz diagonaln¹ posiadaj¹c¹ na przekatnej elementy z wektora
+% a z zadania 1.
 %
-% $$a = [0,-2,-4...-8,-10]$$
-
-y=0:-2:-10;
-
-%% Zadanie 3: wektory
-% Zdefiniuj wektor y postaci posiadaj¹cy 10 elementów:
+% $${\bf{A}} = \left[ {\begin{array}{*{20}c}
+%   {a_1 } & {0}  \\
+%   0 & {a_2 }  \\
+% \end{array}} \right]$$
 %
-% $$a = [-2,...,10]$$
+% $${\bf{A}} = \left[ {\begin{array}{*{20}c}
+%   {a_1 } & 0 & 0  \\
+%   0 &  \ddots  & 0  \\
+%   0 & 0 & {a_n }  \\
+% \end{array}} \right]$$
 
-z=linspace(-2,3,10);
+A=diag(a)
+
+%% Zadanie 3: wykres
+% Narysuj wykres 3D macierzy A z zadania 2.
+
+surfl(A)
 
 %% Wnioski - podsumowanie
 % Wnioski do wykonanej pracy i otrzymanych wyników. W powy¿szym sprawozdaniu

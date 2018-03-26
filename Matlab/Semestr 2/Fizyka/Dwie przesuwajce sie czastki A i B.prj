@@ -1,0 +1,69 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="1346535276" file="C:\Users\Ozpl\Desktop\Matlab\Semestr 1\Guide-AppDesigner\Dwie przesuwajce sie czastki A i B.prj" location="C:\Users\Ozpl\Desktop\Matlab\Semestr 1\Guide-AppDesigner" name="Dwie przesuwajce sie czastki A i B" target="target.mlapps" target-name="Package App">
+    <param.appname>Dwie przesuwajce sie czastki A i B</param.appname>
+    <param.authnamewatermark>Piotr Zakrzewski</param.authnamewatermark>
+    <param.email>ozpl18@gmail.com</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary />
+    <param.description />
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>C:\Users\Ozpl\Desktop\Matlab\Semestr 2\Fizyka\Guide-AppDesigner</param.output>
+    <param.guid>bff932bd-e61d-41f1-8b7d-7d3ac5ff7a0b</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.summary />
+      <param.description />
+      <param.screenshot />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\FizykaDwieCzastkiOXOY.mlapp</file>
+    </fileset.main>
+    <fileset.depfun />
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\Ozpl\Desktop\Matlab\Semestr 2\Fizyka" name="Guide-AppDesigner" optional="false">C:\Users\Ozpl\Desktop\Matlab\Semestr 2\Fizyka\Guide-AppDesigner</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2017a</root>
+      <toolboxes>
+        <toolbox name="matlabcoder" />
+      </toolboxes>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
