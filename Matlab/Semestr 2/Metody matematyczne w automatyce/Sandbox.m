@@ -34,6 +34,5 @@ figure;
 plot(a,faz1);
 
 syms omega;
-pars1 = (1/pi).* vpaintegral(( ( (sin(omega*pi)) / (omega) ) - 1i.*( (2.*sin((omega.*pi) / (2)).^2) / (omega) ) ).^2,omega,0,1);
-
+pars1 = (1/pi).* vpaintegral(( ( (sin(omega*pi)) / (omega) ) - 1i.*( (2.*sin((omega.*pi) / (2)).^2) / (omega) ) ).^2,omega,0,1)
 

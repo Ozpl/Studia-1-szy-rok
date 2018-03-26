@@ -12,10 +12,14 @@
 \newcounter{liczba2}
 \setcounter{liczba1}{1}
 \setcounter{liczba2}{1}
+
 \numberwithin{liczba1}{liczba2}
 \renewcommand{\theequation}{\arabic{liczba1}.\arabic{equation}}
 \setcounter{equation}{1}
+
 \graphicspath{ {Obrazy/MMAsprawko2/} }
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
 
 \title{Metody matematyczne w automatyce - sprawozdanie nr 2}
 \author{Analiza sygnałów z czasem ciągłym - sygnały nieokresowe}
@@ -25,7 +29,7 @@
 \maketitle
 \section{Sygnał nr 1}
 
-Pierwszy sygnał, dla której wyznaczymy transformatę Fouriera wygląda następująco:
+\tab Pierwszy sygnał, dla której wyznaczymy transformatę Fouriera wygląda następująco:
 \begin{figure}[h]
 \centering
 \includegraphics[width=13cm]{sygnal1}
@@ -89,6 +93,7 @@ Postawmy naszą funkcję do wzoru na transformatę (\ref{transformata}): \\
 Sprowadziliśmy wzór do postaci $ a - j \cdot b $, korzystając przy tym z wyżej podanych własności. Zapiszmy teraz częstotliwość amplitudową, którą wyrażamy wzorem $ |\hat{f} (\omega)| = \sqrt{a^2 + b^2} $:
 \begin{equation}
 |\hat{f} (\omega)| = \sqrt{ \Bigg(\frac{sin(\omega \pi)}{\omega}\Bigg)^2 + \Bigg(\frac{2sin^2(\frac{\omega \pi}{2})}{\omega}\Bigg)^2 } = \frac{sin(\omega \pi)^2}{\omega^2} + \Bigg(\frac{4 \cdot sin(\frac{\omega \pi}{2})^2}{\omega^2}\Bigg)^\mathlarger{\frac{1}{2}}
+\label{czestotliwosciowa}
 \end{equation}
 \begin{figure}[h]
 \centering
@@ -101,6 +106,7 @@ Sprowadziliśmy wzór do postaci $ a - j \cdot b $, korzystając przy tym z wyż
 Obliczmy także częstotliwość fazową za pomocą wzoru $ arg \hat{f} (\omega) = arctg(\frac{b}{a}) $:
 \begin{equation}
 arg \hat{f} (\omega) = arctg \Bigg(\frac{\frac{-2sin^2(\frac{\omega \pi}{2})}{\omega}}{\frac{sin(\omega \pi)}{\omega}}\Bigg) = arctg \Bigg(\frac{-2sin^2(\frac{\omega \pi}{2})} {sin(\omega \pi)}\Bigg)
+\label{fazowa}
 \end{equation}
 \pagebreak
 
@@ -115,14 +121,17 @@ arg \hat{f} (\omega) = arctg \Bigg(\frac{\frac{-2sin^2(\frac{\omega \pi}{2})}{\o
 A także energię z wzoru $ \mathlarger{\int_{-\infty}^{\infty}} f(t)^2 dt $:
 \begin{equation}
 E = \int_{0}^{\pi} 1^2 dt = t \ \Bigg|^\pi_0 = \pi
+\label{energia}
 \end{equation}
 
 Oraz energię z wzoru Parsevala (korzystając przy tym z funkcji $ vpaintegral $ w programie Matlab): \\
 \begin{equation}
 E = \int_{-\infty}^{\infty} |f(t)|^2 dt = \frac{1}{\pi} \int_{0}^{\infty} |\hat{f}(\omega)|^2 d\omega = \frac{1}{\pi} \int_{0}^{1} \frac{sin(\omega \pi)}{\omega} - j \cdot \frac{2sin^2(\frac{\omega \pi}{2})}{\omega} d\omega
-\end{equation} \\
+\label{parseval}
+\end{equation}
 
-Energia jest równa (przybliżone do 6 cyfr po przecinku) \\ $ \approx $ 0.4056689 - 1.578752i.
+Energia jest równa (przybliżone do 6 cyfr po przecinku) \\ $ \approx $ 
+0.405669 - 1.578752i.
 \pagebreak
 
 \section{Sygnał nr 2}
@@ -152,15 +161,26 @@ Znów sprawdzamy warunki Dirichleta. Pierwsza jest bezwględna całkowalność (
 \int_{0}^{\pi} \frac{t}{\pi} dt = \frac{1}{\pi} \cdot \frac{1}{2} \cdot t^2 \ \Bigg|^\pi_0 = \frac{\pi}{2} - 0 = \frac{\pi}{2}
 \end{equation} \\
 
-Warunek ten jest więc spełniony, podobnie jak drugi i trzeci. Transformata (\ref{transformata}) dla sygnału nr 2:
+Warunek ten jest więc spełniony, podobnie jak drugi i trzeci. Transformata (wzór \ref{transformata}) dla sygnału nr 2:
 \begin{equation}
 \begin{split}
 \int_{0}^{\pi} \frac{t}{\pi} \cdot e^{-j \omega t} dt
 &{} = \frac{1}{\pi} \cdot \int_{0}^{\pi} t \cdot e^{-j \omega t} dt \\
 &{} = \frac{1}{\pi} \cdot \Bigg[\Big(e^{-j \omega \pi} \cdot (\frac{\pi}{-j \omega} - \frac{1}{(\-j \omega)^2})\Big) - \Big(e^{-j \omega 0} \cdot (\frac{0}{-j \omega} - \frac{1}{(\-j \omega)^2})\Big)\Bigg] \\
 &{} = \frac{1}{\pi} \cdot \Bigg[\Big(e^{-j \omega \pi} \cdot (\frac{\pi}{-j \omega} - \frac{1}{(\-j \omega)^2})\Big) + \frac{1}{(\-j \omega)^2}\Bigg] \\
-&{} = \frac{1}{\pi} \cdot \Bigg[\Big(e^{-j \omega \pi} \cdot (\frac{\pi}{-j \omega} + \frac{1}{\omega^2})\Big) - \frac{1}{\omega^2}\Bigg] \\
+&{} = \frac{1}{\pi} \cdot \Bigg[\Big(e^{-j \omega \pi} \cdot (\frac{\pi}{-j \omega} + \frac{1}{\omega^2})\Big) - \frac{1}{\omega^2}\Bigg] = \ \cdots
 \end{split}
 \end{equation}
+
+Należy sprowadzić transformatę do postaci $ a + j \cdot b $, by policzyć widmo częstotliwościowe dla sygnału drugiego za pomocą wzorów nr \ref{czestotliwosciowa} i \ref{fazowa}, oraz energię z wzoru Parsevala (nr \ref{parseval}). \\
+
+\begin{equation}
+\cdots
+\end{equation} \\
+
+Energia sygnału nr 2 ze wzoru \ref{energia} = 
+\begin{equation}
+E = \int_{0}^{\pi} \Big(\frac{t}{\pi}\Big)^2 dt = \frac{1}{\pi^2} \cdot \frac{1}{3} t^3 \ \Bigg|_{0}^{\pi} = \frac{1}{\pi^2} \cdot \frac{\pi^3}{3} = \frac{\pi}{3}
+\end{equation} \\
 
 \end{document}
