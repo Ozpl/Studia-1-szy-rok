@@ -28,7 +28,7 @@ amp1 = abs(sqrt( ( (4.*sin( (pi.*a)/2) ).^4 / a.^2 ) + ( (sin(pi.*a) ).^2 ) ./ (
 figure;
 plot(a,amp1);
 
-faz1 = ( atan( (-2.*sin( (a.*pi) / (2) ).^2 ) ./ (sin(a.*pi)) ) );
+faz1 = ( atan( (-2.*sin( (a.*pi) / (2) ) ) / (sin(a.*pi)) ) );
 
 figure;
 plot(a,faz1);
