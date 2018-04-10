@@ -13,62 +13,21 @@
 \date{27.03.2018r.}
 
 \begin{document}
-\maketitle
-Funkcja pierwszego sygnału zapisywana jest w postaci:
-
-\[
-    f(t) =\left\{
-                \begin{array}{ll}
-                  1, dla\ t <0,\pi> \\
-                  0, dla\ t \in reszty
-                \end{array}
-              \right.
-\]
-\begin{figure}[h]
-\centering
-\includegraphics[width=13cm]{sygnal1}
-\end{figure}
-
-Należy teraz sprawdzić czy sygnał spełnia warunki Dirichleta. Pierwszym warunkiem jest bezwględna całkowalność, którą możemy zapisać jako następujący wzór \ref{warunek1}: \\
-\begin{equation}
-\int_{-\infty}^{\infty} f(t) dt < \infty
-\label{warunek1}
-\tag{1.1}
-\end{equation}
-
-Należy teraz podstawić nasz sygnał (pomijamy $ \int_{-\pi}^{0} 0 dt $ i $ \int_{\pi}^{2\pi} 0 dt $, bo są równe 0): \\
-\begin{equation}
-\int_{0}^{\pi} 1 dt = 1 \cdot t \Big|^\pi_0 = \pi - 0 = \pi
-\end{equation}
-
-$ \pi $ jest mniejsze od $ \infty $, więc warunek pierwszy jest spełniony. \\
-
-Transformata Fouriera dla sygnału nieokresowego wygląda tak: \\
-\begin{equation}
-\hat{f} (\omega) = \mathcal{F}[f(t)] = \int_{-\infty}^{\infty} f(t) e^{-j \omega t} dt, \ \ \ \omega \in (-\infty,\infty)
-\end{equation}
-
-\begin{align}
-\begin{split}
-\int_{0}^{\pi} 1 \cdot e^{-j \omega t} dt = &{} 1 \cdot \frac{1}{-j \omega } \cdot e^{-j \omega t} \Big|^\pi_0 = \\
-&{} = \frac{-1}{j \omega} \cdot (e^{-j \omega \pi} - e^{-j \omega 0}) = \frac{-1}{j \omega} \cdot (e^{-j \omega \pi} - 1) = \\
-&{} = j \cdot \frac{1}{\omega}(e^{-j \omega \pi} - 1) = j \cdot \frac{1}{\omega} \cdot [cos(-\omega t) + j \cdot sin(-\omega t) - 1] = \\
-&{} = j \cdot \frac{1}{\omega} \cdot (cos(\omega t) + j \cdot -sin(\omega t) - 1)\\
-&{} = -j \cdot \frac{1}{\omega}(1 - cos(\omega \pi) + j \cdot sin(\omega \pi)) = \\
-&{} = -j \cdot \frac{1}{\omega} \cdot (2sin^2(\frac{\omega \pi}{2}) + j \cdot sin(\omega \pi)) = \frac{sin(\omega \pi)}{\omega} - j \cdot \frac{2sin^2(\frac{\omega \pi}{2})}{\omega}
-\end{split}
-\end{align}
-
-\begin{equation}
-|\hat{f} (\omega)| = \sqrt{ (\frac{sin(\omega \pi)}{\omega})^2 + (\frac{2sin^2(\frac{\omega \pi}{2})}{\omega})^2 }
-\end{equation}
-
-\begin{equation}
-arg \hat{f} (\omega) = arctg (\frac{\frac{-2sin^2(\frac{\omega \pi}{2})}{\omega}}{\frac{sin(\omega \pi)}{\omega}}) = arctg (\frac{-2sin^2(\frac{\omega \pi}{2})}{sin(\omega \pi)})
-\end{equation}
-
-\begin{equation}
-E = \int_{-\infty}^{\infty} f(t)^2 dt = \int_{0}^{\pi} 1^2 dt = t \Big|^\pi_0 = \pi
-\end{equation}
-
+\begin{center}
+ \begin{tabular}{||c c c c||} 
+ \hline
+ m [g] & Col2 & Col2 & Col3 \\ [0.5ex] 
+ \hline\hline
+ 1 & 6 & 87837 & 787 \\ 
+ \hline
+ 2 & 7 & 78 & 5415 \\
+ \hline
+ 3 & 545 & 778 & 7507 \\
+ \hline
+ 4 & 545 & 18744 & 7560 \\
+ \hline
+ 5 & 88 & 788 & 6344 \\ [1ex] 
+ \hline
+\end{tabular}
+\end{center}
 \end{document}

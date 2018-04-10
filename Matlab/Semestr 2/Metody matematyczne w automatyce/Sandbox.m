@@ -2,7 +2,7 @@ clear;
 close all;
 a = linspace(-5,5,1000);
 
-b = sqrt((-sin(a.*pi)./a).^2+(2*(sin(-pi.*a*0.5).^2)).^2);
+b = abs(sqrt((-sin(a.*pi)./a).^2+(2*(sin(-pi.*a*0.5).^2)).^2));
 figure;
 plot(a,b);
 

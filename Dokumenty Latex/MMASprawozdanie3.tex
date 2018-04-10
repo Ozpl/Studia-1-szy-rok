@@ -1,0 +1,126 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{relsize}
+\usepackage[a4paper, total={6in, 10in}]{geometry}
+
+\newcounter{liczba1}
+\newcounter{liczba2}
+\setcounter{liczba1}{1}
+\setcounter{liczba2}{1}
+
+\numberwithin{liczba1}{liczba2}
+\renewcommand{\theequation}{\arabic{liczba1}.\arabic{equation}}
+\setcounter{equation}{1}
+
+\graphicspath{ {Obrazy/MMAsprawko3/} }
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\title{Metody matematyczne w automatyce - sprawozdanie nr 3}
+\author{Analiza widmowa sygnałów z czasem dyskretnym - sygnały nieokresowe}
+\date{10.04.2018r. Piotr Zakrzewski nr. 42033, AiR L2 semestr 2}
+
+\begin{document}
+\maketitle
+\section{Sygnał nr 1}
+
+\tab Pierwszy sygnał, dla której wyznaczymy widmo zespolone, tj. transformatę Fouriera wygląda następująco:
+\begin{figure}[h]
+\centering
+\includegraphics[width=13cm]{sygnal1}
+\end{figure}
+
+Możemy go zapisać w poniższej postaci:
+\[
+    f[k] =\left\{
+                \begin{array}{ll}
+                  1, dla\ k <0,K> \\
+                  0, dla\ k \in \text{reszty}
+                \end{array}
+\label{sygnal1klamra}
+\tag{1.1}
+              \right.
+\]
+
+W pierwszej kolejności należy sprawdzić czy sygnał spełnia warunki Dirichleta. Pierwszym warunkiem jest bezwględna całkowalność, którą możemy zapisać jako następujący wzór \ref{warunek1}: \\
+\begin{equation}
+\int_{-\infty}^{\infty} f[k] dt < \infty
+\label{warunek1}
+\end{equation}
+
+Aby to zrobić, musimy podstawić nasz sygnał pod wzór \ref{warunek1}: \\
+\begin{equation}
+\int_{0}^{K} 1 dt = 1 \cdot t \ \Bigg|^K_0 = 1 - 0 = 1
+\end{equation}
+
+Wynika z tego, że $ 1 $ jest mniejsze od $ \infty $, więc warunek pierwszy jest spełniony. Następne dwa warunki: \textit{"funkcja $ f $ w przedziale jednego okresu ma skończoną liczbę maksimów lokalnych i minimów lokalnych"} oraz \textit{"funkcja $ f $ w przedziale jednego okresu posiada skończoną liczbę punktów nieciągłości pierwszego rodzaju"}. Oba warunki są spełnione, a możemy to wywnioskować z rysunku sygnału. \\
+
+Wzory, które mogą się przydać przy obliczeniach:
+\begin{gather*}
+cos(-x) = cos(x), \ \ \ \ sin(-x) = -sin(x) \\
+e^{jx} = cos(x) + j \cdot sin(x), \ \ \ \ e^{-jx} = cos(-x) + j \cdot sin(-x) \\
+\sum_{n=0}^{N} q = \frac{1 - q^{N+1}}{1 - q}
+\end{gather*}
+
+Obliczmy teraz transformatę:
+\begin{equation}
+\begin{split}
+\hat{f}(e^{j\Omega})
+&{} = \sum_{k = -\infty}^{\infty} f[k]e^{-jk\Omega}\ \ , \ \ \ \ \ \ \Omega \in (-\infty,\infty) \\
+&{} = \sum_{k = 0}^{K} 1 \cdot e^{-jk\Omega} = \frac{1 - (e^{-j\Omega})^{K+1}}{1 - e^{-j\Omega}} \\
+&{} = \frac{1 - e^{-j\Omega(K + 1)}}{1 - e^{-j\Omega}} = \frac{1 - e^{-j\Omega k - j\Omega}}{1 - e^{-j\Omega}} \cdot \frac{e^{\frac{j\Omega}{2}}}{e^{\frac{j\Omega}{2}}}\\
+&{} = \frac{e^{\frac{j\Omega}{2}} - e^{\frac{-j\Omega}{2}-j\Omega K}}{e^{\frac{j\Omega}{2}} - e^{\frac{-j\Omega}{2}}} = \frac{e^{\frac{j\Omega}{2}} - e^{\frac{-j\Omega}{2}-j\Omega K}}{2j sin({\frac{\Omega}{2})}}
+\end{split}
+\end{equation} \\
+
+Obliczmy najpierw osobno licznik, dla klarownoci zapisu:
+\begin{equation}
+\begin{split}
+e^{\frac{j\Omega}{2}} - e^{-j\Omega (K + \frac{1}{2})}
+&{} = e^{0 + \frac{j\Omega}{2}} - e^{-j\Omega K - \frac{j\Omega}{2}} \\
+&{} = e^{\frac{j\Omega K}{2} - \frac{j\Omega K}{2}} \cdot e^{\frac{j\Omega}{2}} - e^{\frac{-2j\Omega K}{2}} \cdot e^{\frac{-j\Omega}{2}} \\
+&{} = e^{\frac{j\Omega K}{2}} \cdot e^{\frac{-j\Omega K}{2}} \cdot e^{\frac{j\Omega}{2}} - e^{\frac{-j\Omega K}{2} - \frac{j\Omega K}{2}} \cdot e^{\frac{-j\Omega}{2}} \\
+&{} = e^{\frac{j\Omega K}{2}} \cdot e^{\frac{j\Omega}{2}} \cdot e^{\frac{-j\Omega K}{2}} - e^{\frac{-j\Omega K}{2}} \cdot e^{\frac{-j\Omega}{2}} \cdot e^{\frac{-j\Omega K}{2}} \\
+&{} = e^{\frac{j\Omega(K+1)}{2}} \cdot e^{\frac{-j\Omega K}{2}} - e^{\frac{-j\Omega (K+1)}{2}} \cdot e^{\frac{-j\Omega K}{2}} \\
+&{} = (e^{\frac{j\Omega(K+1)}{2}} - e^{\frac{-j\Omega(K+1)}{2}}) \cdot e^{\frac{-j\Omega K}{2}} \\
+&{} = \frac{2j sin(K+1)}{2} \cdot e^{\frac{-j\Omega K}{2}}
+\end{split}
+\end{equation} \\
+
+A finalnie możemy to rozwinąć tak:
+\begin{equation}
+\begin{split}
+\frac{\frac{2j sin(K+1)}{2} \cdot e^{\frac{-j\Omega K}{2}}}{2j sin({\frac{\Omega}{2})}}
+&{} = \frac{sin(\frac{K+1}{2}) \cdot e^{\frac{-j\Omega K}{2}}}{sin(\frac{\Omega}{2})} \\
+&{} = \frac{sin(\Omega(\frac{K+1}{2}))}{sin(\frac{\Omega}{2})} \cdot (cos (\frac{\Omega K}{2}) - j \cdot sin (\frac{\Omega K}{2})) \\
+&{} = \frac{sin(\Omega (\frac{K+1}{2})) \cdot cos(\frac{\Omega K}{2})}{sin(\frac{\Omega}{2})} - j \cdot \frac{sin(\Omega(\frac{K+1}{2})) \cdot sin(\frac{\Omega K}{2})}{sin(\frac{\Omega}{2})}
+\end{split}
+\end{equation} \\
+
+Z wyznaczoną postacią $ a - j \cdot b $ możemy zacząć obliczać widmo amplitudowe:
+\begin{equation}
+| \hat{f}(e^{j\Omega}) | = \sqrt{\Bigg(\frac{sin(\Omega (\frac{K+1}{2})) \cdot cos(\frac{\Omega K}{2})}{sin(\frac{\Omega}{2})}\Bigg)^2 + \Bigg(\frac{sin(\Omega(\frac{K+1}{2})) \cdot sin(\frac{\Omega K}{2})}{sin(\frac{\Omega}{2})}\Bigg)^2}
+\end{equation} \\
+
+Oraz widmo fazowe:
+\begin{equation}
+arg \hat{f}(e^{j\Omega}) = arctg \Bigg(\frac{\frac{sin(\Omega(\frac{K+1}{2})) \cdot sin(\frac{\Omega K}{2})}{sin(\frac{\Omega}{2})}}{\frac{sin(\Omega (\frac{K+1}{2})) \cdot cos(\frac{\Omega K}{2})}{sin(\frac{\Omega}{2})}}\Bigg) = arctg \Bigg(\frac{sin(\Omega(\frac{K+1}{2})) \cdot sin(\frac{\Omega K}{2})}{sin(\Omega (\frac{K+1}{2})) \cdot cos(\frac{\Omega K}{2})}\Bigg)
+\end{equation} \\
+
+Energia sygnału jest równa:
+\begin{equation}
+E = \int_{-\infty}^{\infty} \hat{f}(e^{j\Omega}) d\Omega
+\end{equation} \\
+
+Transformata odwrotna:
+\begin{equation}
+f[k] = \frac{1}{2\pi} \cdot \int_{-\pi}^{\pi} | \hat{f}(e^{j\Omega}) | \cdot e^{j arg \hat{f}(e^{j\Omega})} \cdot e^{jk\Omega} d\Omega
+\end{equation} \\
+
+
+\end{document}
