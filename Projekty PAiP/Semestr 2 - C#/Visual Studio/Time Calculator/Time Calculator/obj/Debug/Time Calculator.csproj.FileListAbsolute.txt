@@ -1,0 +1,14 @@
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\bin\Debug\Time Calculator.exe.config
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\bin\Debug\Time Calculator.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\bin\Debug\Time Calculator.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.csprojResolveAssemblyReference.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time_Calculator.Form1.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time_Calculator.Properties.Resources.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.csproj.GenerateResource.Cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.csproj.CoreCompileInputs.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\bin\Debug\Time Calculator.exe.manifest
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\bin\Debug\Time Calculator.application
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.exe.manifest
+C:\Users\Ozpl\Desktop\Projekty PAiP\Semestr 2 - C#\Visual Studio\Time Calculator\Time Calculator\obj\Debug\Time Calculator.application
