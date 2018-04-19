@@ -1,0 +1,7 @@
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\bin\Debug\Tablice 1 i 2D - metody.exe.config
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\bin\Debug\Tablice 1 i 2D - metody.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\bin\Debug\Tablice 1 i 2D - metody.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\obj\Debug\Tablice 1 i 2D - metody.csprojResolveAssemblyReference.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\obj\Debug\Tablice 1 i 2D - metody.csproj.CoreCompileInputs.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\obj\Debug\Tablice 1 i 2D - metody.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Tablice 1 i 2D - metody\Tablice 1 i 2D - metody\obj\Debug\Tablice 1 i 2D - metody.pdb
