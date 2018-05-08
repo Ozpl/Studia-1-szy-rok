@@ -1,0 +1,10 @@
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\bin\Debug\Sandbox.exe.config
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\bin\Debug\Sandbox.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\bin\Debug\Sandbox.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.Form1.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.Properties.Resources.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.csproj.GenerateResource.Cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.csproj.CoreCompileInputs.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\Sandbox\Sandbox\obj\Debug\Sandbox.csprojResolveAssemblyReference.cache

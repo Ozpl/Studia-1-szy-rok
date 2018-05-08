@@ -1,0 +1,10 @@
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.csprojResolveAssemblyReference.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.Form1.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.Properties.Resources.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.csproj.GenerateResource.Cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.csproj.CoreCompileInputs.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\bin\Debug\RPManagerCharacterCreation.exe.config
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\bin\Debug\RPManagerCharacterCreation.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\bin\Debug\RPManagerCharacterCreation.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Zadania\Visual Studio\RPManagerCharacterCreation\RPManagerCharacterCreation\obj\Debug\RPManagerCharacterCreation.pdb

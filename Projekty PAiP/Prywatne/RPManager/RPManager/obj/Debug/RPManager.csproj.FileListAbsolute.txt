@@ -1,0 +1,10 @@
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\bin\Debug\RPManager.exe.config
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\bin\Debug\RPManager.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\bin\Debug\RPManager.pdb
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.csprojResolveAssemblyReference.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.Form1.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.Properties.Resources.resources
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.csproj.GenerateResource.Cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.csproj.CoreCompileInputs.cache
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.exe
+C:\Users\Ozpl\Desktop\Projekty PAiP\Prywatne\RPManager\RPManager\obj\Debug\RPManager.pdb
